@@ -6,7 +6,7 @@ A beginner-friendly **HTML**, **CSS**, and **JavaScript** project where players 
 
 ## 📺 Live Demo
 
-🔗 [LIVE DEMO]()
+🔗 [LIVE DEMO](https://number-guessing-game-iota-nine.vercel.app/)
 
 ---
 
