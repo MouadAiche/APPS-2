@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- POS -->
+    <div class="pos-container">
+
+        <!-- SIDEBAR -->
+        <nav class="sidebar">
+            <button class="hamburger" id="hamburger">
+                <span id="hamburger-icon">&#9776;</span>
+            </button>
+            <h2 class="logo">OUR APPS</h2>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-target="MULTI-CONVERTER-1">MULTI-CONVERTER-1</a></li>
+                <li><a href="#" class="nav-link" data-target="NUMBER-GUESSING-GAME">NUMBER-GUESSING-GAME</a></li>
+            </ul>
+        </nav>
+
+        <!-- MAIN SECTIONS -->
+        <main>
+
+            <!-- DASHBOARD SECTION -->
+            <section id="MULTI-CONVERTER-1" class="page active">
+              <h1>MULTI-CONVERTER-1</h1>
+              <p>Here you can make some convertions.</p>
+              <!-- MULTI-CONVERTER-1 -->
+                <div class="multi-converter-1">
+                    <div class="container-1">
+                        <label>weight</label>
+                        <input id="weight" type="radio" name="choose">
+                        <label>length</label>
+                        <input id="length" type="radio" name="choose">
+                        <label>currency</label>
+                        <input id="currency" type="radio" name="choose">
+                    </div>
+                    <div class="container-2">
+                        <h3 id="welcome">👆WHAT WOULD YOU CONVERT👆</h3>
+                        <h1 id="title"></h1>
+                        <label id="label-1" ></label>
+                        <input id="input-1" class="inputs" type="number">
+                        <label id="label-2"></label>
+                        <input id="input-2" class="inputs" type="number">
+                    </div>
+                </div>
+            </section>
+
+            <!-- INVENTORY SECTION -->
+            <section id="NUMBER-GUESSING-GAME" class="page">
+                <h1>NUMBER-GUESSING-GAME</h1>
+                <p>Choose the max and the min, then enjoy finding the answer.</p>
+                <!-- NUMBER GUESSING GAME -->
+                <div class="number-guessing-game">
+                    <!-- MAIN PAGE -->
+                    <div class="mainpage">
+                        <h1>number guessing game</h1>
+                        <h3>choose the min and the max</h3>
+                        <label id="minlabel">min</label>
+                        <input id="mininput" type="number">
+                        <label id=" maxlabel">max</label>
+                        <input id="maxinput" type="number">
+                        <button id="getstart">get start</button>
+                    </div>
+                    <!-- THE GAME ALERT -->
+                    <div class="gamealert">
+                        <div class="game">
+                            <h1 id="h1"></h1>
+                            <input id="guess" type="number">
+                            <p id="done"></p>
+                            <p id="result"></p>
+                            <button id="check">check</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
