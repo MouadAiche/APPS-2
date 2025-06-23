@@ -6,7 +6,7 @@ A simple and interactive **HTML**, **CSS**, and **JavaScript** based arithmetic 
 
 ## 📺 Live Demo
 
-🔗 *[Add your live demo URL here]*
+[LIVE DEMO](https://addition-app-red.vercel.app/)
 
 ---
 
