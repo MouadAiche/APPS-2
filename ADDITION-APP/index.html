@@ -7,41 +7,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="radios-1">
+    <div class="app-container">
+        <div class="radios-1">
+            <h2>Choose number One</h2>
+            <input type="radio" id="Single-digit-one" name="number-one-digits" hidden>
+            <label for="Single-digit-one" class="label-1 first-label">Single Digit</label>
 
-        <h2>Number One</h2>
+            <input type="radio" id="Two-digit-one" name="number-one-digits" hidden>
+            <label for="Two-digit-one" class="label-1 second-label">Two Digit</label>
 
-        <label for="Single-digit" class="label-1">Single Digit</label>
-        <input type="radio" id="Single-digit" name="digits">
+            <input type="radio" id="Three-digit-one" name="number-one-digits" hidden>
+            <label for="Three-digit-one" class="label-1 third-label">Three Digit</label>
+        </div>
+        <div class="container">
+            <div class="span-container">
+                <span>000</span>
+                <span id="plus">+</span>
+                <span>000</span>
+            </div>
+            <p>=</p>
+            <input type="number" name="ok" id="answer" placeholder="answer">
+            <button id="submit">Check</button>
+        </div>
+        <div class="radios-2">
+            <h2>Choose number Two</h2>
+            <input type="radio" id="Single-digit-two" name="number-two-digits" hidden>
+            <label for="Single-digit-two" class="label-2 fourth-label">Single Digit</label>
 
-        <label for="Two-digit" class="label-1">Two Digit</label>
-        <input type="radio" id="Two-digit" name="digits">
+            <input type="radio" id="Two-digit-two" name="number-two-digits" hidden>
+            <label for="Two-digit-two" class="label-2 fifth-label">Two Digit</label>
 
-        <label for="Three-digit" class="label-1">Three Digit</label>
-        <input type="radio" id="Three-digit" name="digits">
+            <input type="radio" id="Three-digit-two" name="number-two-digits" hidden>
+            <label for="Three-digit-two" class="label-2 sixth-label">Three Digit</label>
+        </div>
 
-    </div>
-
-    <div class="container">
-
-        <div class="span-container"><span>000</span> <span id="plus">+</span> <span>000</span></div>
-        <p>=</p>
-        <input type="number" name="ok" id="">
-        <button id="submit">Check</button>
-    </div>
-
-    <div class="radios-2">
-
-        <h2>Number Two</h2>
-
-        <label for="Single-digit" class="label-2">Single Digit</label>
-        <input type="radio" id="Single-digit" name="digits">
-
-        <label for="Two-digit" class="label-2">Two Digit</label>
-        <input type="radio" id="Two-digit" name="digits">
-
-        <label for="Three-digit" class="label-2">Three Digit</label>
-        <input type="radio" id="Three-digit" name="digits">
+        <div class="result">
+            <p id="operations"></p>
+            <p id="correct"></p>
+            <p id="inccorect"></p>
+        </div>
 
     </div>
     <script src="app.js"></script>
